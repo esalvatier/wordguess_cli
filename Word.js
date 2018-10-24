@@ -1,7 +1,7 @@
 var Letter = require("./Letter.js");
 
 function Word(value) {
-  this.value =value.split("").map(current => (new Letter(current)));
+  this.value =value.split("").map(char => (new Letter(char)));
 
   this.toString = function() {
     var result = "";
